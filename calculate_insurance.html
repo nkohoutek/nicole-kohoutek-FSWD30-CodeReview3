@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="nkohoutek.codefactory">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta lang="en">
+	<meta charset=utf-8>  
+	<title>CR3 Insurance Calculator</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="cr3-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
+
+	<style>
+		#main {background-color:#406A80;}
+	</style>
+
+
+</head>
+
+<body>
+	<div id="container">
+	
+		<header id="header">
+			<p id="companyname">Inscurance <b>Company</b></p>
+		</header>
+
+<!--
+	<nav id="navigation">
+		 <ul>
+  			<li><a href="index.html">Home</a></li>
+  			<li><a href=""></a></li>
+  			<li><a href=""></a></li>
+  			<li><a href=""></a></li>
+		 </ul> 
+	</nav>
+	 -->
+	
+
+		<main id="main" background-color="#2D4452">
+
+		<div id="divcalculate">
+
+			<div id="divcalculateform">
+				Your Name:
+				<br><br>
+				Age:
+				<br><br>
+				Country:
+				<br><br>
+				Horsepower:
+			</div>
+
+			<div id="divcalculateform">
+				<input type="text" name="name" id="form_name" value="John Doe" size="20">
+				<br><br>
+				<input type="text" name="age" id="form_age" value="20" size="20">
+				<br><br>
+				<input type="text" name="country" id="form_country" value="Austria" size="20">
+				<br><br>
+				<input type="text" name="horsepower" id="form_horsepower" value="150" size="20">
+				<br><br>
+				<button type="button" id="button_calculate" onclick="calculateInsurance()">calculate</button>
+			</div>
+
+		</div>
+				
+
+	</main>
+
+ 	<footer id="footer">
+    	<div id="checkprices">
+    		<span id="calculate_result_here">Printed calculation goes here</span>
+    	</div>
+    </footer>	
+	
+</div>
+
+	<script>	
+
+		function calculateInsurance() {
+			var name = document.getElementById("form_name").value;
+		var age = document.getElementById("form_age").value;
+		var country = document.getElementById("form_country").value;
+		var horse_power = document.getElementById("form_horsepower").value;
+		var insurance = horse_power * 100 / age + 150;
+		document.getElementById("calculate_result_here").innerHTML = insurance;
+		console.log(name);
+		console.log(age);
+		console.log(country);
+		console.log(insurance);
+		console.log(horse_power);
+	}
+
+document.getElementsByTagName("form").addEventListener("blur");
+		
+
+
+	</script>
+
+
+</body>
+
+</html>
