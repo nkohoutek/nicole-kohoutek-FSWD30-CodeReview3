@@ -25,7 +25,7 @@ body {
 	color: #E78244;
 }
 
-
+/* heading in the header*/
 #companyname {
 	margin: 20px;
 	font-size: 22pt;
@@ -43,17 +43,20 @@ body {
 	min-height: 300px;
 }
 
+/* heading "our team" at main site*/
 main h2 {
 	color: #2D4452;
 	font-size: 20pt;
 	font-weight: bold;
 }
 
+/* imaages of teamies in divteam at main site*/
 .imgteam {
 	width: 80%;
 	height: 80%;
 }
 
+/* holds the divs divteamie and divteaminfo*/
 #divteam {
 	display: flex;
 	display: -webkit-flex;
@@ -64,13 +67,15 @@ main h2 {
 	margin: 0 auto;
 	/* border: 1px solid blue; */
 }
-	
+
+/* holds images of the team and the divteaminfo*/
 #divteamie {
 	width: 25%;
 	margin: 0 auto;
 	/* border: 1px solid yellow; */
 }
 
+/* holds name and email of the team*/
 #divteaminfo {
 	text-align: center;
 	color: #FFFFFF;
@@ -78,6 +83,7 @@ main h2 {
 	/* border: 1px solid  black; */
 }
 
+/* footer of the page*/
 #footer {
 	display: flex;
 	align-items: center;
@@ -89,7 +95,7 @@ main h2 {
 	background-color: #F4F4F4;
 }
 
-
+/* button in footer on landing/main site of the page*/
 #button_checkprice {
 	color: #2D4452;
 	background-color: #F4F4F4;
@@ -119,6 +125,7 @@ button:focus {
  -o-box-shadow: inset 3px -5px 89px 7px #D6D6D6;
 }
 
+/* div in main part at the calculate_insurance site - belongs to the form*/
 #divcalculate {
 	width: 60%;
 	display: flex;
@@ -131,18 +138,21 @@ button:focus {
 	font-weight: bold;
 }
 
+/* div which holds the form-input elements at calculate_insurance site */
 #divcalculateform {
 	text-align: left;
 	width: 50%;
 	margin: 0 -35px;
 }
 
+/* styles form input*/
 input {
 	border: 1px solid #B5AFAF;
 	font-size: 14.5pt;
 	border-radius: 5px;
 }
 
+/* calculating button, belongs to the form of the calculate_insurance site*/
 #button_calculate {
 	color: #2D4452;
 	background-color: #F4F4F4;
@@ -168,8 +178,26 @@ input {
  -o-box-shadow: inset 3px -5px 89px 7px #D6D6D6;
 }
 
+/* text in footer, where javascript outputs result of calculate-insurance-form
+function is in the script-tag at body-end in calculate_insurance.html */
 #calculate_result_here {
 	color: #2D4452;
 	font-size: 14.5pt;
 }
 
+.mailto{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.mailto:hover {
+	text-decoration: underline;
+	color: #2D4452;
+	font-padding: 1px;
+}
+
+header a {
+	text-decoration: none;
+	font-size: 22pt;
+	color: #E78244;
+}

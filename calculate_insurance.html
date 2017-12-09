@@ -18,25 +18,15 @@
 
 <body>
 	<div id="container">
-	
+	<!-- Header with name of the company and link back to main/index site -->
 		<header id="header">
-			<p id="companyname">Inscurance <b>Company</b></p>
+				<p id="companyname"><a href="index1.html">Inscurance <b>Company</b></a></p>
 		</header>
 
-<!--
-	<nav id="navigation">
-		 <ul>
-  			<li><a href="index.html">Home</a></li>
-  			<li><a href=""></a></li>
-  			<li><a href=""></a></li>
-  			<li><a href=""></a></li>
-		 </ul> 
-	</nav>
-	 -->
-	
 
 		<main id="main" background-color="#2D4452">
-
+<!-- main part with calculating form and a button beneath, which calculates with onclick-function
+function is at the script-tag before closing body-tag -->
 		<div id="divcalculate">
 
 			<div id="divcalculateform">
@@ -65,7 +55,7 @@
 				
 
 	</main>
-
+<!-- footer with text, which will be raplaced with the result of onclick-button-function -->
  	<footer id="footer">
     	<div id="checkprices">
     		<span id="calculate_result_here">Printed calculation goes here</span>
@@ -73,7 +63,7 @@
     </footer>	
 	
 </div>
-
+<!-- javascript part comes beneath -->
 	<script>	
 
 		function calculateInsurance() {
